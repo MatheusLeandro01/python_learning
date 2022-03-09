@@ -1,0 +1,38 @@
+Tipos primitivos: 
+
+int = tipo inteiro ex: -1, 0, 1, 2, 3, 10000, -5698...
+float = Tipo real -> 0.5, 1.32, -10.78 e etc...
+str = String -> 'Matheus'
+booleano = True, False
+    Tabela Verdade:
+    and - True se todos forem verdadeiros
+    or - True se apenas um for verdadeiro
+    not - True se for falso
+
+
+Saída de dados: 
+
+Observação variáveis = Os nomes das variáveis podem conter apenas letras, numeros e underscores.
+* Não podem iniciar com número
+* Pode comerçar com uma letra ou underscores
+* A variável nao pode ter espaço, underscores podem ser usados para dar espaço as variáveis.
+* Não pode usar palavras reservadas
+
+
+n1 = input('Digite um valor: ') -> variável n1, que está solicitando que o usuário informe o valor
+Quanto você não especifica o tipo primitivo em uma variável, ela por padrão é string.
+
+
+Para transformar o tipo da variável faça:
+n1 = int(input('Digite um valor: ')) -> variável transformada para inteiro.
+
+
+para verificar o tipo da variável:
+    print(type(n1)) -> utilize o type.
+
+variável.is ->'is' é bastante útil para consultar coisas sobre a variável.
+    
+ex: n1 = input('')
+    print(n1.isalpha())
+    print(n1.isalnum())
+    print(n1.isdecimal())

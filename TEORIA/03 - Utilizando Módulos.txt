@@ -1,0 +1,43 @@
+Todo arquivo '.py' é um módulo podendo ser importado com o comando 'import'.
+
+
+existem módulos (bibliotecas) já prontos que vem com o python e existem módulos que você mesmo pode fazer.
+
+
+para chamar um módulo:
+
+import math -> estou chamando um módulo(que também é uma biblioteca) nativo do python chamado 'math' que contem funções
+matemáticas.
+
+from math import sqrt -> estou importando uma função específica do módulo math
+
+
+
+O que são módulos e bibliotecas?
+
+A primeira pergunta que precisamos responder é: o que é uma biblioteca? A resposta a seguir, embora correta,
+não é muito útil porque ela só muda o foco da pergunta: uma biblioteca é um conjunto de módulos. Portanto,
+a biblioteca padrão Python é um conjunto de módulos disponíveis em Python para que você possa importá-los
+e usar as funcionalidades deles quando bem quiser.
+
+A pergunta agora é: o que é um módulo? Um módulo nada mais é do que um arquivo
+.py com instruções e definições em Python.
+
+A principio ver 2 módulos -> math e random
+
+math -> https://docs.python.org/pt-br/3/library/math.html
+
+random -> https://docs.python.org/pt-br/3/library/random.html
+
+math -> algumas funções úteis
+    ceil: arredonda um valor para cima
+    floor: arredonda um valor para baixo
+    trunc: elimina todos os numeros após o ponto
+    pow: potencia (igual a 2 ** 2)
+    sqrt: Calcular a raiz quadrada de um valor
+    factorial: calculo de fatorial
+
+random -> algumas funções úteis
+    randint: Retorna um número inteiro aleatório definido por você ex: random.randint(1,10) -> numeros inteiros de 1 a 10
+    choice: retorna um numero aleatória que está dentro de uma lista ou tupla
+    shuffle: embaralha os valores de uma lista

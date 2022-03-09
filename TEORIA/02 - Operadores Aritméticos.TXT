@@ -1,0 +1,29 @@
+Operadores Aritméticos:
+
+Adição (+)
+Subtração (-)
+Multiplicação (*)
+Divisão (/)
+Potência (**) -> número elevado a outro ex: 10² == 10 ** 2
+Divisão inteira (//) -> Divisão normal = 10/3 = 3,33  / Divisão inteira = 10/3 = 3 -> não mostra os valores após o ponto.
+Resto da divisão (%) ->     (10/2 = 0)       (10/3 = 1)
+
+
+Exemplos:
+
+5 + 2 == 7
+5 - 2 == 3
+5 * 2 == 10
+5 / 2 == 2.5
+5 ** 2 == 25
+5 // 2 == 2
+5 % 2 == 1
+
+Ordem de precedência
+
+1º = () -> executa o que está em parenteses primeiro independente dos operadores
+2º = **
+3º = '*', '/', '//', '%' -> caso eles estejam juntos, faz quem aparecer primeiro.
+4º = '+', '-'
+
+** -> calculando a raiz quadrada de qualquer valor: (2 ** (1/2))

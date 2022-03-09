@@ -1,0 +1,20 @@
+é formada por chave e valor:
+
+linguas = {'br':'portugues'}
+
+Chave é: 'br' e valor é: 'portugues'
+
+
+
+print(linguas['br']) = imprimir o valor por meio da chave
+
+'br' in linguas  ->#Estou verificando se o valor 'br' está contido na variável 'linguas'
+
+#Para adicionar uma nova chave e valor digite: " linguas['es'] = 'Espanhol' "
+
+
+
+linguas = {'br': 'portugues', 'pt': 'portugues', 'en':'inglês'}
+
+for valor in linguas.values(): #vai imprimir os valores do dicionário
+    print(valor)

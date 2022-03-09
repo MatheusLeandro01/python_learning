@@ -1,0 +1,19 @@
+﻿***DESENVOLVIMENTO***
+    Função =
+    Método =
+    Elemento =
+    Variável = 
+    Operadores = 
+    Módulos = 
+    Iteração =
+    Linguagem Estática = 
+    Linguagem Dinâmica =
+    Atributo =
+    Feature = 
+
+***GITHUB***
+    git = é um sistema de controle de versões
+    branch =
+    gitignore = 
+    Repositório = é onde o código será armazenado. é onde estará todas as versões. Todo projeto estará lá.
+    github = Serviço para genrenciar os repositórios.

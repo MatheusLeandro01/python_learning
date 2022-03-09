@@ -1,0 +1,44 @@
+Fatiamento de String:
+valor = 'Exemplo' -> estou declarando uma variável do tipo string e cada letra representa um espaço que se inicia pelo 0
+print(valor[1]) -> estou mandando imprimir a variável 'valor[1]' significa que somente o espaço 1 desta variável será impressa
+
+EXEMPLO
+0123456
+Conforme no exemplo acima cada letra tem uma identificação, os espaços também recebem uma identificação
+
+FATIAMENTO:
+
+frase = 'Curso em Video Python'
+
+frase[9:13] -> "Vide" -> isso significa que será impresso a partir do identificador 9 e irá aparecer somente até o 12. (13 é exclusivo e por isso não aparece)
+frase[9:21] -> "Video Python" -> mesmo '21' sendo uma valor maior que a frase em sí somente será impresso até o último valor.
+frase[9:21:2] -> "VdoPto" -> Vai do 9 até 21(como as letras vao até 20 só vai contar até 20) de 2 em 2.
+frase[:5] -> "Curso" -> vai do começo até 4.
+frase[15:] -> "Python" -> vai do 15 até o fim.
+frase[9::3] -> "VePh" -> vai do 9 até o fim de 3 em 3.
+
+ANALISANDO AS STRINGS:
+
+len(frase) = "21" informa o comprimento da minha variável
+frase.count('o') = "3" Pede para contar quantas vezes aparece a letra "o"(minúsculo).
+frase.count('o', 0, 13) = "1" Pede para contar quantas vezes aparece a letra "o"(minúsculo) no espeaço de 0 à 12 (lembrando que 13 não conta.).
+frase.find('deo') = "11" Vai mostrar em que momento começou esta string
+frase.find('Android') = "-1" Caso não tenho as strings que foi pedido para encotrar, irá retornar -1
+'Curso' in frase =  "True" Pergunta se a string 'Curso' está contida na variável 'frase'.
+
+TRANSFORMANDO AS STRINGS:
+
+frase.replace('Python', 'Android') = Vai substituir 'Python' por 'Android'
+frase.upper() = Transforma toda a string em MAIÚSCULO.
+frase.lower() = Transforma toda a string em MINUSCULO.
+frase.capitalize() = Apenas a primeira letra de uma string será maiúscula e o restante será minusculo.
+frase.title() = Transforma a primeira letra de cada palavra em maiuscula e o restante será minusculo.
+frase.strip() = irá remover espaços inúteis no ínio e no final da string.
+frase.rstrip() = Irá remover espaços inúteis no final(lado direito) da string.
+frase.lstrip() = Irá remover espaços inúteis no começo(lado esquerdo) da string.
+
+FUNCIONALIDADES DE DIVISÃO DE STRING:
+
+frase.split() = Vai dividir a string se houver espaços de acordo com as palavras -> ['Curso', 'em', 'Video', 'Python']
+
+'-'.join() -> você pode utilizar em conjunto com o split para aplicar qualquer string entre os espaços.

@@ -1,0 +1,6 @@
+para definir uma função, utilize "def"
+
+
+
+
+
