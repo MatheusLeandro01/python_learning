@@ -1,0 +1,58 @@
+*Classe {
+    Classe representa uma ideia ou conceito e classifica objetos
+    que tenham propriedades similares.
+
+    Blocos de construção mais importantes em sistemas Orientado a objetos,
+    com responsabilidades bem definidas dentro da aplicação.
+
+    Coleção de objetos descritos com o mesmmos atributos e operações.
+
+    Tipo personalizado de dados, "Molde". para a criação de objetos.
+}
+
+*Objeto {
+    Ocorrência específica de uma classe - "Instância de classe".
+
+    representa entidades do mundo real, como carros, pessoas,
+    contas correntes.
+
+    Tem características próprias(atributos) e executa ações(métdos)
+    provenientes da classe que originou o objeto.
+}
+
+*Atributo {
+    Ou propriedades: características particular de uma Ocorrência de uma classe, por exemplo
+    o nome e a altura de uma pessoa.
+
+    Há dois tipos principais de atributos:
+        Estático: Mantém o mesmo valor durante sua existência,
+        como a data de nascimento de uma pessoa
+
+        Dinâmico: Valores que variam com o passar do tempo
+        como a idade de uma pessoa
+}
+
+*Método {
+    Lógica contida em uma classe para atribuir
+    comportamentos (sequência de comandos), identificada
+    por um nome.
+
+    Similar a funções e procedimentos.
+
+    O ato de invocar(chamar) um método é a passagem de mensagens
+    para o objeto.
+
+    Exemplos de métodos: a classe Pessoa pode ter os métodos
+    nascer(), comer() e morrer().
+}
+
+class Pessoa: #classe
+    def cumprimentar(self): #Método
+        return 'Olá'
+
+
+if __name__ == '__main__':
+    p = Pessoa()
+    print(Pessoa.cumprimentar(p))
+    print(id(p))
+    print(p.cumprimentar())
