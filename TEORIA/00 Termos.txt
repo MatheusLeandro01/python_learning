@@ -1,6 +1,6 @@
 ﻿***DESENVOLVIMENTO***
     Função =
-    Método =
+    Método construtor da classe =
     Elemento =
     Variável = 
     Operadores = 
@@ -9,4 +9,7 @@
     Linguagem Estática = 
     Linguagem Dinâmica =
     Atributo =
-    Feature = 
+    Feature =
+    Método geral da classe = 
+    atributo de classe = 
+    
