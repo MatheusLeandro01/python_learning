@@ -1,14 +1,33 @@
-class Soma: #classe
-    def __init__(self, n1, n2):
-        self.x = n1
-        self.z = n2
-        print('Objeto Criado!!!')
-    def calculandoSoma(self):
-        total = self.x + self.z
-        return f'Resultado é: {str(total)}'
+'''
+Classe Bola: Crie uma classe que modele uma bola:
 
-soma = Soma(10, 20)
+Atributos: Cor, circunferência, material
+Métodos: trocaCor e mostraCor
+'''
+class CirculoPerfeito:
+    def __init__(self):
+        self.cor = 'Azul'
+        self.circuferencia = 4 
+        self.material = 'Papel'
+        
+    def mostra_cor(self):
+        return self.cor
+    
+    def troca_cor(self, cor):
+        self.cor = cor
 
-total = soma.calculandoSoma()
+circulo_primeiro = CirculoPerfeito() #Objeto circulo_primeiro
+circulo_segundo = CirculoPerfeito()
 
-print(total)
+print(type(circulo_primeiro))
+
+print(circulo_primeiro.mostra_cor())
+print(circulo_segundo.mostra_cor())
+
+print()
+
+circulo_primeiro.troca_cor('Verde')
+circulo_segundo.troca_cor('Rosa')
+
+print(circulo_primeiro.mostra_cor())
+print(circulo_segundo.mostra_cor())
