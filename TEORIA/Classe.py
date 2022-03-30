@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     for filho in matheus.filhos:
         print(filho)
-        
+
 '''
 class Pessoa:
     def __init__(self, idade=None, nome='', *filhos):
@@ -28,6 +28,12 @@ if __name__ == ('__main__'):
     marcelo = Pessoa(nome='Marcelo', idade=3)#Filho de Matheus
     matheus = Pessoa(23, 'Matheus', victor, marcelo) #Pai de Victor e Marcelo
     victor.filhos = 'Victorzinho JR'
+    matheus.neto = 'Victorzinho JR' #Atributo dinâmico -> atributo criado para o objeto "matheus" após o método construtor
     for filho in matheus.filhos:
         print(filho.nome, filho.idade, filho.filhos)
+    print(matheus.neto)
+
+    print(victor.__dict__)
+    print(marcelo.__dict__)
+    print(matheus.__dict__)
 '''
