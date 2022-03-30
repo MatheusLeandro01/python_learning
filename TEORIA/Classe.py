@@ -15,3 +15,19 @@ if __name__ == '__main__':
 
     for filho in matheus.filhos:
         print(filho)
+        
+'''
+class Pessoa:
+    def __init__(self, idade=None, nome='', *filhos):
+        self.idade = idade
+        self.nome = nome
+        self.filhos = list(filhos)
+
+if __name__ == ('__main__'):
+    victor = Pessoa(nome='Victor', idade=5) #Filho de Matheus
+    marcelo = Pessoa(nome='Marcelo', idade=3)#Filho de Matheus
+    matheus = Pessoa(23, 'Matheus', victor, marcelo) #Pai de Victor e Marcelo
+    victor.filhos = 'Victorzinho JR'
+    for filho in matheus.filhos:
+        print(filho.nome, filho.idade, filho.filhos)
+'''
