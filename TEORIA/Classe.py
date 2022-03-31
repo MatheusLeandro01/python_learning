@@ -6,6 +6,14 @@ class Pessoa:
         self.nome = nome
         self.filhos = list(filhos) #atributo complexo
 
+    def cumprimentar(self):
+        return f'Olá {id(self)}'
+    
+    @classmethod
+    def nome_e_atributos_de_classe(cls):
+        return f'{cls} - olhos {cls.olhos}'
+
+
 if __name__ == ('__main__'):
     victor = Pessoa(nome='Victor', idade=5) #Filho de Matheus
     marcelo = Pessoa(nome='Marcelo', idade=3)#Filho de Matheus
@@ -20,3 +28,4 @@ if __name__ == ('__main__'):
     print(marcelo.__dict__)
     print(matheus.__dict__)
     print(matheus.olhos) # imprimindo a minha instância de atributo de classe
+    print(Pessoa.nome_e_atributos_de_classe(), matheus.nome_e_atributos_de_classe())
