@@ -2,7 +2,7 @@ class Pessoa:
     olhos = 2 # atributo de classe
 
     def __init__(self, idade=None, nome='', *filhos):
-        self.idade = idade #atributo de dados
+        self.idade = idade #atributo de objeto ou atributo de Instância
         self.nome = nome
         self.filhos = list(filhos) #atributo complexo
 
