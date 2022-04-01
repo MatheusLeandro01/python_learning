@@ -10,7 +10,7 @@ class Pessoa:
         return f'Olá {id(self)}'
     
     @classmethod
-    def nome_e_atributos_de_classe(cls):
+    def nome_e_atributos_de_classe(cls): #metodo de classe
         return f'{cls} - olhos {cls.olhos}'
 
 
