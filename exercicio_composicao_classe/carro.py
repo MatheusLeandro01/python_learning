@@ -27,15 +27,15 @@ O       L
     0
     >>> motor.acelerar()
     >>> motor.velocidade
-    2
-    >>> motor.acelerar()
-    >>> motor.velocidade()
-    3
-    >>> motor.frear()
-    >>> motor.velocidade()
     1
+    >>> motor.acelerar()
+    >>> motor.velocidade
+    2
     >>> motor.frear()
-    >>> motor.velocidade()
+    >>> motor.velocidade
+    0
+    >>> motor.frear()
+    >>> motor.velocidade
     0
     >>> # Testando direção
     >>> direcao = Direcao()
@@ -86,6 +86,30 @@ O       L
     >>> carro.calcular_direcao()
     'Oeste'
 '''
+
+class Carro():
+    def __init__(self, direcao, motor):
+        self.direcao = direcao
+        self.motor = motor
+    
+    def calcular_velocidade(self):
+        return self.motor.velocidade
+    
+    def acelerar(self):
+        self.motor.acelerar()
+
+    def frear(self):
+        self.motor.frear()
+
+    def calcular_direcao(self):
+        return self.direcao.valor
+    
+    def girar_a_direita(self):
+        self.direcao.girar_a_direita()
+    
+    def girar_a_esquerda(self):
+        self.direcao.girar_a_esquerda()
+
 
 NORTE='Norte'
 SUL='Sul'
