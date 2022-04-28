@@ -1,6 +1,9 @@
-para definir uma função, utilize "def"
+#função com parâmetros variáveis
+args = (1, 2, 3)
+kwargs = {'nome': 'Matheus', 'idade': 23}
 
+def f(*args, **kwargs):
+    print(args)
+    print(kwargs)
 
-
-
-
+f(*args, **kwargs)
