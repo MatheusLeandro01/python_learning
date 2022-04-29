@@ -1,15 +1,27 @@
-class Televisao: #Criando uma classe -> um novo tipo de dado
-    def __init__(self):
-        self.ligada = False # atributo do objeto
-        self.canal = 2 # atributo do objeto
+class Pessoa:
+    olhos = 2
+    def __init__(self, nome=None, idade=23, *filhos):
+        self.idade = idade
+        self.nome = nome
+        self.filho = list(filhos)
 
-tv = Televisao() # tv é um objeto da classe Televisao ou tv é uma instância de Televisao
-print(tv.ligada)
-print(tv.canal)
+    def cumprimentar(self):
+        return f'Olá {id(self)}'
 
-tv_sala = Televisao() #tv_sala -> objeto da classe Televisao
-tv_sala.ligada = True
-tv_sala.canal = 4
+    @staticmethod
+    def metodo_estatico():
+        return 42
 
-print(tv.canal)
-print(tv_sala.canal)
+    @classmethod
+    def metodo_de_classe(cls, nome=None):
+        cls.nome = nome
+
+
+
+matheus = Pessoa('Matheus', 23)
+leandro_dutra = Pessoa('Leandro', 50, matheus)
+
+for filho in leandro_dutra.filho:
+    print(f'Nome: {filho.nome}\nIdade: {filho.idade}')
+
+matheus.metodo_estatico()
