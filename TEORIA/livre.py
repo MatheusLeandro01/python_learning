@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Pessoa:
     olhos = 2
     def __init__(self, nome=None, idade=23, *filhos):
@@ -25,3 +26,5 @@ for filho in leandro_dutra.filho:
     print(f'Nome: {filho.nome}\nIdade: {filho.idade}')
 
 matheus.metodo_estatico()
+=======
+>>>>>>> 2c75a9ca4678fb4ae00d6885c5ea1a6ff82766c7
