@@ -7,7 +7,7 @@
     >>> pessoa.altura
     177
 '''
-class Pessoa:
+class Pessoa():
     def __init__(self):
         self.altura = 175
 
