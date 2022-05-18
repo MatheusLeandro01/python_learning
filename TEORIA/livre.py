@@ -1,30 +1,42 @@
-<<<<<<< HEAD
-class Pessoa:
-    olhos = 2
-    def __init__(self, nome=None, idade=23, *filhos):
-        self.idade = idade
-        self.nome = nome
-        self.filho = list(filhos)
+numero = 22
 
-    def cumprimentar(self):
-        return f'Olá {id(self)}'
+centenas_str = dezenas_str = unidades_str = ''
+partes_numericas = 0
 
-    @staticmethod
-    def metodo_estatico():
-        return 42
+centenas_int = numero // 100
+if centenas_int == 1:
+    centenas_str = ('1 Centena')
+    partes_numericas += 1
+elif centenas_int > 1:
+    centenas_str = (f'{centenas_int} Centenas')
+    partes_numericas += 1
 
-    @classmethod
-    def metodo_de_classe(cls, nome=None):
-        cls.nome = nome
+dezenas_int = (numero % 100) // 10
+if dezenas_int == 1:
+    dezenas_str = ('1 Dezena')
+    partes_numericas += 1
+elif dezenas_int > 1:
+    dezenas_str = (f'{dezenas_int} Dezenas')
+    partes_numericas += 1
+
+unidades_int = ((numero % 100) % 10)
+if unidades_int == 1:
+    unidades_str = ('1 Unidade')
+    partes_numericas += 1
+elif unidades_int > 1:
+    unidades_str = (f'{unidades_int} Unidades')
+    partes_numericas += 1
 
 
-
-matheus = Pessoa('Matheus', 23)
-leandro_dutra = Pessoa('Leandro', 50, matheus)
-
-for filho in leandro_dutra.filho:
-    print(f'Nome: {filho.nome}\nIdade: {filho.idade}')
-
-matheus.metodo_estatico()
-=======
->>>>>>> 2c75a9ca4678fb4ae00d6885c5ea1a6ff82766c7
+if partes_numericas == 0:
+    print('Não possui centenas, dezenas ou unidades.')
+elif partes_numericas == 1:
+    print(centenas_str + dezenas_str + unidades_str)
+elif partes_numericas == 3:
+    print(f'{centenas_str}, {dezenas_str} e {unidades_str}')
+elif partes_numericas == 2:
+    if centenas_str != '':
+        segunda_parte = dezenas_str + unidades_str
+        print(f'{centenas_str} e {segunda_parte}')
+    else:
+        print(f'{dezenas_str} e {unidades_str}')

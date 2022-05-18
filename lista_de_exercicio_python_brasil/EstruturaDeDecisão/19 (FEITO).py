@@ -7,7 +7,7 @@ Faça um Programa que leia um número inteiro menor que 1000 e imprima a quantid
 
 '''
 #'''
-numero = int(input('Inform um valor entre 0 e 999: '))
+numero = 123 #int(input('Inform um valor entre 0 e 999: '))
 
 centenas_str = dezenas_str = unidade_str = '' #Criou três variáveis do tipo string
 
@@ -21,6 +21,21 @@ if centenas_int == 1:
 elif centenas_int > 1:
     centenas_str = (f'{centenas_int} Centenas')
     partes_numericas += 1
+
+'''
+numero = 123
+
+centena, numero = divmod(numero, 100) #aprensenta o resultado da divisão inteira e também o resto da divisão
+print(centena)#EX 123 // 100 = 1 -> Resto da divisão 123 // 100 = 23.
+
+
+print(numero) # Anteriormente a variável "número" era igual a "123" após utilizar a função divmod == 23(resto)
+
+dezena, numero = divmod(numero, 10)
+print(dezena)# 23 // 10 = 2 -> resto da divisão 23 / 10 = 3
+
+print(numero) # O resto da divisão de 23/10 = 3
+'''
 
 
 dezenas_int, numero = divmod(numero, 10)
